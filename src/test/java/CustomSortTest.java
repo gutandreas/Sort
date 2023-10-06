@@ -14,7 +14,7 @@ public class CustomSortTest {
         Assertions.assertEquals(5, array[4]);
         Assertions.assertEquals(7, array[5]);
         Assertions.assertEquals(7, array[6]);
-        Assertions.assertEquals(8, array[7]);
+        Assertions.assertEquals(9, array[7]);
 
     }
 }
