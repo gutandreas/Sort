@@ -5,9 +5,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int mode = 2; // 1 = drucken, 2 = Stoppuhr
-        int algorithm = 1; // 1 = SelectionSort, 2 = MergeSort //
-        int arraySize = 1000; // Anzahl der zu sortierenden Zahlen
+        int mode = 1; // 1 = drucken, 2 = Stoppuhr
+        int algorithm = 3; // 1 = CustomSort, 2 = SelectionSort, 3 = MergeSort //
+        int arraySize = 40; // Anzahl der zu sortierenden Zahlen
 
         int[] array = RandomArrayGenerator.generateRandomArray(arraySize);
 
@@ -19,6 +19,7 @@ public class Main {
             case 1:
                 System.out.println("Custom Sort");
                 CustomSort.sort(array);
+                break;
             case 2:
                 System.out.println("Selection Sort");
                 SelectionSort.sort(array);

@@ -1,14 +1,17 @@
 public class MergeSort {
 
     public static void sort(int[] array, int left, int right) {
-        if (left < right) {
-            int middle = (left + right) / 2;
 
-            sort(array, left, middle);
-            sort(array, middle + 1, right);
+        if (left >= right) {
+            return;}
 
-            merge(array, left, middle, right);
-        }
+        int middle = (left + right) / 2;
+
+        sort(array, left, middle);
+        sort(array, middle + 1, right);
+
+        merge(array, left, middle, right);
+
     }
 
 
