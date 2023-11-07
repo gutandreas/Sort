@@ -9,7 +9,6 @@ public class Recursion {
         Tree tree = getDefaultTree();
         addNodeToListRecursive(tree.getRoot(), treeAsList);
         printList(treeAsList);
-
     }
 
     public static LinkedList<TreeNode> addNodeToListRecursive(TreeNode currentNode, LinkedList<TreeNode> list) {
@@ -68,8 +67,8 @@ public class Recursion {
 
         tree.addNode(n9, n4);
         tree.addNode(n10, n4);
-        tree.addNode(n11, n6);
-        tree.addNode(n12, n6);
+        tree.addNode(n11, n5);
+        tree.addNode(n12, n5);
 
         return tree;
     }
